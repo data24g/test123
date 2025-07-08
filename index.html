@@ -1,14 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BTEC FPT - Cao Đẳng Anh Quốc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    ljhfakjfsdfjbsdjfdbfds
+
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/Logo-Btec.png" alt="BTEC FPT Logo">
+            </a>
+            <ul>
+                <li><a href="#gioi-thieu">Giới Thiệu</a></li>
+                <li><a href="#thong-tin">Thông Tin</a></li>
+                <li><a href="#doi-tac">Đối Tác</a></li>
+                <li><a href="#van-bang">Văn Bằng</a></li>
+                <li><a href="#dang-ky" class="cta-button">Đăng Ký</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Cao Đẳng Anh Quốc BTEC FPT</h1>
+                <p>Cầu nối cho sinh viên Việt Nam tiếp cận chương trình đào tạo quốc tế.</p>
+                <a href="#dang-ky" class="cta-button-main">Tìm hiểu ngay</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="gioi-thieu" class="content-section">
+            <div class="container dual-column">
+                <div class="text-content">
+                    <h2>Giới Thiệu BTEC FPT</h2>
+                    <p>BTEC HND là chương trình đào tạo của Anh Quốc, tương đương cấp độ cao đẳng trong hệ thống giáo
+                        dục Việt Nam. Với triết lý đào tạo hiện đại hướng đến việc giúp người học ứng dụng tối đa kiến
+                        thức vào thực tế, chương trình BTEC HND liên tục được cập nhật những xu hướng, kiến thức mới
+                        nhất...</p>
+                    <h3>Tầm nhìn và sứ mệnh</h3>
+                    <p>Nhận thấy được tầm quan trọng của việc bồi dưỡng, đào tạo nguồn nhân lực chất lượng cao cho đất
+                        nước, BTEC FPT luôn tối đa hóa kỹ năng ứng dụng kiến thức người học, đưa công nghệ và những
+                        thành tựu khoa học cập nhật nhất vào giảng dạy...</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/anh-truong.jpg" alt="Sinh viên BTEC FPT trong khuôn viên trường">
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Section -->
+        <section id="thong-tin" class="content-section">
+            <div class="container">
+                <h2>Thông Tin Tuyển Sinh</h2>
+                <div class="info-image">
+                    <img src="images/information-school.png" alt="Thông tin tuyển sinh BTEC FPT">
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="doi-tac" class="content-section">
+            <div class="container">
+                <h2>Đối Tác & Công Nhận</h2>
+                <div class="partners-grid">
+                    <img src="images/brand-01.png" alt="Đối tác 1">
+                    <img src="images/brand-02.png" alt="Đối tác 2">
+                    <img src="images/brand-03.png" alt="Đối tác 3">
+                    <img src="images/logo-fpt-edu.svg" alt="FPT Education">
+                    <img src="images/logo-pearson.svg" alt="Pearson Logo">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Diploma Section -->
+        <section id="van-bang" class="content-section">
+            <h2>Giá Trị Văn Bằng Quốc Tế</h2>
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h3>Edexcel - Cơ quan cấp bằng lớn nhất Anh Quốc</h3>
+                    <p>Edexcel, thành lập năm 1996, là cơ quan cấp văn bằng lớn nhất Anh Quốc, cung cấp văn bằng học
+                        thuật và nghề nghiệp uy tín trên toàn thế giới.</p>
+                </div>
+                <div class="intro-text">
+                    <h3>Bằng BTEC HND Level 5</h3>
+                    <p>Là một bằng cấp bậc cao tại Anh Quốc, có giá trị tương đương với chương trình năm thứ hai trong
+                        chương trình đại học 3 năm, cho phép sinh viên học lên cấp cao hơn tại các trường đại học quốc
+                        tế.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dang-ky">
+            <h2>Đăng Ký Tư Vấn</h2>
+            <p>Đừng bỏ lỡ cơ hội! Hãy ghi danh để nhận tư vấn chi tiết về chương trình.</p>
+            <form>
+                <input type="text" placeholder="Họ và Tên" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <button type="submit">Ghi Danh</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col-1">
+                <img src="images/Logo-Btec.png" alt="BTEC FPT Logo" class="footer-logo">
+                <h3>Cao đẳng Anh Quốc BTEC FPT</h3>
+                <p>Hotline 24/7 <br> <strong>0329 605 828</strong></p>
+                <div class="social-icons">
+                    <!-- Social icons can be added here -->
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h4>BTEC FPT Hà Nội</h4>
+                <p>Tòa BTEC FPT, Trịnh Văn Bô, Nam Từ Liêm, TP. Hà Nội <br> 098 109 05 13</p>
+                <h4>BTEC FPT TP. Hồ Chí Minh</h4>
+                <p>Tòa F, Công viên phần mềm Quang Trung, P. Tân Chánh Hiệp, Q. 12, TP. Hồ Chí Minh <br> 035 385 21 38
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h4>BTEC FPT Đà Nẵng</h4>
+                <p>66 Võ Văn Tần, Q. Thanh Khê, TP. Đà Nẵng <br> 032 757 57 27</p>
+                <h4>BTEC FPT Cần Thơ</h4>
+                <p>Đường số 22, Phường Thường Thạnh, Quận Cái Răng, TP. Cần Thơ <br> 096 705 76 05</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BTEC FPT. Tôn vinh giá trị tri thức Việt.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

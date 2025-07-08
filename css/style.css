@@ -1,0 +1,317 @@
+/* --- General Setup --- */
+:root {
+    --primary-font: 'Noto Serif', serif;
+    --heading-font: 'Cinzel', serif;
+    --dark-color: #3a2e25;
+    /* Darker Wood Brown */
+    --light-color: #f5f1e8;
+    /* Old Paper/Parchment */
+    --accent-color: #a02c2c;
+    /* Imperial Red / Seal Color */
+    --highlight-color: #c99846;
+    /* Muted Gold / Bronze */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--dark-color);
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 80px 0;
+}
+
+main section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+main section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    margin: 0.75rem auto 0;
+}
+
+
+/* --- Header & Navigation --- */
+header {
+    background-color: rgba(245, 241, 232, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(58, 46, 37, 0.1);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    max-width: 140px;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav ul li a {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+nav .cta-button {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    font-weight: 700;
+}
+
+nav .cta-button:hover {
+    background-color: #802323;
+    /* Darker red */
+    color: var(--light-color);
+    transform: translateY(-2px);
+}
+
+/* --- Hero Section --- */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/van-mieu-bg.jpg') no-repeat center center/cover;
+    color: var(--light-color);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button-main {
+    background-color: var(--highlight-color);
+    color: var(--dark-color);
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-main:hover {
+    background-color: var(--highlight-color);
+    color: var(--dark-color);
+}
+
+/* --- Content & Image Section (Giới thiệu) --- */
+.dual-column {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.dual-column>div {
+    flex: 1;
+}
+
+.dual-column .image-content img {
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Information Section --- */
+#thong-tin .info-image {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#thong-tin .info-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Partners Section --- */
+#doi-tac {
+    background-color: #fff;
+    /* A slightly different background to stand out */
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.partners-grid img {
+    max-height: 70px;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.partners-grid img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* --- Diploma Section --- */
+#van-bang {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--highlight-color);
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.footer-column a {
+    color: var(--light-color);
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: var(--highlight-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(245, 241, 232, 0.2);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        display: none;
+        /* Simple responsive for now, can be replaced by a hamburger menu */
+    }
+
+    .dual-column {
+        flex-direction: column;
+    }
+}
